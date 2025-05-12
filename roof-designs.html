@@ -1,0 +1,148 @@
+<!-- roof-designs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Allstyles Carpentry – Roof Designs</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER (same as homepage) -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="logo-transparent-png.png" alt="Allstyles Carpentry Logo">
+        <span>Allstyles Carpentry</span>
+      </a>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roof-designs.html" class="active">Roof Designs</a></li>
+          <li><a href="ceiling-designs.html">Ceiling Designs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sign-in.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADING -->
+    <h1 class="roof-page-heading">Our Roof Designs</h1>
+
+    <!-- SERVICE SELECTOR NAV -->
+    <section class="service-selector container">
+      <button onclick="location.href='index.html'" class="nav-btn ghost">Home</button>
+      <button data-filter="all"    class="nav-btn solid">All</button>
+      <button data-filter="designs" class="nav-btn ghost">All Roof Designs</button>
+      <button data-filter="repair"  class="nav-btn ghost">Roof Repair</button>
+    </section>
+
+    <!-- ROOF GALLERY -->
+<section class="container roof-gallery">
+  <div class="roof-card" data-category="designs">
+  <img src="IMG-20250512-WA0005.jpg" alt="Classic Gable Roof">
+  <div class="roof-info">
+    <h3>Classic Gable</h3>
+    <button class="details-btn btn-sm solid">Details</button>
+  </div>
+
+  <!-- DETAILS OVERLAY -->
+  <div class="card-overlay">
+    <div class="overlay-content">
+      <button class="close-btn">&times;</button>
+      <div class="overlay-body">
+        <p class="price">From $1,200</p>
+        <p>Timeless pitched design that complements any home.</p>
+      </div>
+      <div class="overlay-footer">
+        <a href="#" class="btn-sm ghost">Request Quote</a>
+        <a href="#" class="btn-sm solid">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="roof-card" data-category="designs">
+  <img src="IMG-20250512-WA0009.jpg" alt="Classic Gable Roof">
+  <div class="roof-info">
+    <h3>Classic Gable</h3>
+    <button class="details-btn btn-sm solid">Details</button>
+  </div>
+
+  <!-- DETAILS OVERLAY -->
+  <div class="card-overlay">
+    <div class="overlay-content">
+      <button class="close-btn">&times;</button>
+      <div class="overlay-body">
+        <p class="price">From $1,200</p>
+        <p>Timeless pitched design that complements any home.</p>
+      </div>
+      <div class="overlay-footer">
+        <a href="#" class="btn-sm ghost">Request Quote</a>
+        <a href="#" class="btn-sm solid">Book Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</section>
+    <!-- DESCRIPTION OF SERVICES -->
+    <section id="services-desc" class="container services-desc">
+      <h2>Description of Services</h2>
+      <ul>
+        <li>All Roof Designs</li>
+        <li>Roof Repair</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section id="contact" class="container contact-block">
+      <h2>Need Help Choosing?</h2>
+      <p>Our experts are here to guide you—reach out for a free consultation.</p>
+      <a href="#contact-form" class="btn">Request a Quote</a>
+    </section>
+  </main>
+
+  <!-- FOOTER (same as homepage) -->
+  <footer>
+    <div class="container footer-flex">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone"></i> +263 XX XXX XXXX</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@allstylescarpentry.com">info@allstylescarpentry.com</a></p>
+      </div>
+      <div class="footer-form">
+        <h3>Request a Quote</h3>
+        <form id="contact-form" action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <p>&copy; 2025 Allstyles Carpentry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

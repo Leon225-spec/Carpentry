@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Allstyles Carpentry</title>
+  <!-- Quicksand + Font Awesome -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="logo-transparent-png.png" alt="Allstyles Carpentry Logo">
+        <span>Allstyles Carpentry</span>
+      </a>
+
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="roof-designs.html">Roof Designs</a></li>
+          <li><a href="ceiling-designs.html">Ceiling Designs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="sign-in.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-bg"><!-- background-image via CSS --></div>
+      <div class="hero-content container">
+        <h1>Crafting Your Vision in Wood</h1>
+        <p>Custom carpentry, innovative roof &amp; ceiling designs, and quality craftsmanship.</p>
+        <a href="#contact" class="btn">Get a Free Quote</a>
+      </div>
+    </section>
+
+    <!-- SERVICES SNAPSHOT -->
+    <section id="services" class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card">
+          
+          <h3>Roof Designs</h3>
+          <a href="roof-designs.html" class="btn-sm">Explore</a>
+        </div>
+        <div class="card">
+          
+          <h3>Ceiling Designs</h3>
+          <a href="ceiling-designs.html" class="btn-sm">Explore</a>
+        </div>
+        <div class="card">
+          
+          <h3>Custom Carpentry</h3>
+          <a href="#" class="btn-sm">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- WHY CHOOSE US -->
+    <section id="why-us" class="container">
+      <h2>Why Choose Allstyles Carpentry</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h4>Consult</h4>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h4>Design</h4>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h4>Build</h4>
+        </div>
+        <div class="step">
+          <span class="step-number">4</span>
+          <h4>Inspect</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonials-carousel">
+        <!-- Each .testimonial rotates -->
+        <div class="testimonial">
+          <p>“Outstanding quality and attention to detail.”</p>
+          <cite>- John D.</cite>
+        </div>
+        <!-- ... -->
+      </div>
+    </section>
+
+    <!-- SPECIAL OFFER -->
+    <section id="offer" class="special-offer">
+      <div class="container">
+        <p>Book by June 1st and get <strong>10% off</strong> your first consultation!</p>
+      </div>
+    </section>
+
+    <!-- CONTACT & FOOTER FORM -->
+    <footer>
+      <div class="container footer-flex">
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone"></i> +263 XX XXX XXXX</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@allstylescarpentry.com">info@allstylescarpentry.com</a></p>
+        </div>
+        <div class="footer-form">
+          <h3>Request a Quote</h3>
+          <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <p>&copy; 2025 Allstyles Carpentry. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
